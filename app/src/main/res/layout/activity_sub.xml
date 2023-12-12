@@ -4,33 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SubActivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gl_main"
+        android:id="@+id/gl_sub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fc_main_top"
-        android:name="jp.suntech.c22010.mysoundplayer.TopFragment"
+        android:id="@+id/fragmentContainerView"
+        android:name="jp.suntech.c22010.mysoundplayer.CoverFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/gl_main"
+        app:layout_constraintBottom_toTopOf="@+id/gl_sub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/lv_music"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:entries="@array/lv"
+    <TextView
+        android:id="@+id/tv_music_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginBottom="336dp"
+        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gl_main" />
-
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

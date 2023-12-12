@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">MySoundPlayer</string>
     <string name="tv_title">環境音を聞く</string>
+    <string name="image1">image1</string>
+    <string name="test">test</string>
+    <string-array name="lv">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
