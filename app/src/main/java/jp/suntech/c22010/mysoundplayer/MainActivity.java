@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ResetData(Context context) {
-        DatabaseHelper _helper = new DatabaseHelper(context);
         SQLiteDatabase db = _helper.getWritableDatabase();
 
         String sql = "DELETE FROM music_list";
